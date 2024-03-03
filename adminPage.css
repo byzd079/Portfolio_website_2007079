@@ -1,0 +1,32 @@
+﻿.form-control {
+    display: block;
+    width: 60%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin:auto;
+    align-content:center;
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Add space between form groups */
+}
+
+    .form-group label {
+        display: block; /* Ensure labels are displayed as block elements */
+        margin-bottom: 0.5rem; /* Add space below labels */
+    }
+
+
+.admin_head{
+    text-align:center;
+}
+.btn-primary{
+    align-content:center;
+}

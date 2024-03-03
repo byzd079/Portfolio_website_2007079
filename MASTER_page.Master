@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MASTER_page.master.cs" Inherits="WebApplication_TESTING.MASTER_page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Portfolio</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: paleturquoise;">
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="header">
+
+                 <nav id="navigate_desktop">
+        <div class="icon">
+            Bayzed Ahmed
+
+        </div>
+        <div>
+            
+            <ul class="navigate_link">
+                <li ><a href="#about">About</a></li>
+                <li ><a href="#experience">Experiences</a></li>
+                <li ><a href="#projects">Projects</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
+
+
+        </div>
+
+
+        
+    </nav>
+    <nav id="ham_navigation">
+        <div class="icon">
+            Bayzed Ahmed </div>
+            <div class="ham_menu">
+            <div class="ham_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            
+            </div>
+            <div class="menu_links">
+                <li ><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li ><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+                <li ><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li ><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+            </div>
+
+    </nav>
+
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div class="footer">
+                <footer>
+        <nav>
+        <div class="nav-links-container">
+            <ul class="navigate_link">
+                <li ><a href="#about">About</a></li>
+                <li ><a href="#experience">Experiences</a></li>
+                <li ><a href="#projects">Projects</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Bayzed Ahmed. All Rights Reserved</p>
+    </footer>
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>
